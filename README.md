@@ -7,4 +7,6 @@ This approach makes it easier to design an HTML page.
 
 # USES
 Template Engines allow you to generate dynamic HTML content by combining templates with data. 
-In this app, we will explore the crucial concepts of Template Engines and their integration with Node.js using the Express.js framework. 
+
+# SPECIFIC OBJECTIVES
+This app demonstrates the crucial concepts of Template Engines and their integration with Node.js using the Express.js framework.
