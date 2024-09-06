@@ -1,0 +1,35 @@
+{
+  "name": "template-engine-app1",
+  "version": "1.0.0",
+  "description": "This app is about mastering express.js and node.js alongside template engines such as Pug, handlebars and EJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gadrawingz/node-template-engine-app1.git"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "express",
+    "template",
+    "engine",
+    "ejs",
+    "handlebars",
+    "pug"
+  ],
+  "author": "Gad Iradufasha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gadrawingz/node-template-engine-app1/issues"
+  },
+  "homepage": "https://github.com/Gadrawingz/node-template-engine-app1#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1",
+    "pug": "^3.0.3"
+  }
+}
