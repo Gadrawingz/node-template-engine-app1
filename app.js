@@ -1,16 +1,25 @@
-// Initialized variables
+// Variables initialization
 const express = require('express');
+const exphbs = require('express-handlebars');
 const app = express();
 
-// Set EJS as template engine
-app.set("view engine", "ejs");
+// Action:
+app.engine('handlebars', exphbs.engine({
+    extname: "handlebars",
+    defaultLayout: "main",
+    layoutsDir: __dirname + "/layouts",
+}));
 
-// Routes
-app.get("/", (request, response) => {
-    response.render("index", 
-        {loggedIn: true, username: "Gad"}
-    );
-})
+app.set('view engine', 'handlebars');
+
+// Route + rendering using EJS
+app.get('/', (request, response) => {
+    response.render("index", {
+        loggedIn: true,
+        username: "Johnson", 
+        title: "Home"
+    })
+});
 
 // Start server
 app.listen(3000, ()=> {
